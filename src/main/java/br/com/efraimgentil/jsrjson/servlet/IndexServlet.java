@@ -1,4 +1,4 @@
-package br.com.efraimgentil.jee7json.servlet;
+package br.com.efraimgentil.jsrjson.servlet;
 
 import java.io.IOException;
 

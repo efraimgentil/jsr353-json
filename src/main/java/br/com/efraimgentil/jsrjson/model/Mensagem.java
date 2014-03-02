@@ -1,19 +1,16 @@
-package br.com.efraimgentil.jee7json.model;
+package br.com.efraimgentil.jsrjson.model;
 
 import java.lang.reflect.Field;
 
 import javax.json.Json;
-import javax.json.JsonBuilderFactory;
 import javax.json.JsonObject;
 import javax.json.JsonObjectBuilder;
-import javax.json.JsonValue;
-import javax.json.spi.JsonProvider;
 
 public class Mensagem {
     
     private String mensagem;
     private String usuario;
-    private String type;
+    private String tipo;
 
 
     public String getMensagem() {
@@ -31,13 +28,13 @@ public class Mensagem {
     public void setUsuario(String usuario) {
         this.usuario = usuario;
     }
-
-    public String getType() {
-        return type;
+    
+    public String getTipo() {
+        return tipo;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
     }
     
     public JsonObject getAsJson() throws IllegalArgumentException, IllegalAccessException{
