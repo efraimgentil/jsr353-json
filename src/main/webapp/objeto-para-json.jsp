@@ -4,31 +4,28 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Objeto para Json</title>
 </head>
 <body>
     <jsp:include page="/menu.jsp" />
 
     <form action="" method="post">
-        <div>
-            <label>Nome</label> <input type="text" name="nome" />
-        </div>
-        <div>
-            <label>E-mail</label> <input type="text" name="email" />
-        </div>
-        <div>
-            <label>Telefone</label> <input type="text" name="telefone" />
-        </div>
-        <div>
-            <label>Observação</label>
-            <textarea name="observacao" rows="3" cols="6"></textarea>
-        </div>
+        <fieldset>
+            <legend>Mensagem</legend>
+            <div>
+                <label>Mensagem</label> <input type="text" name="mensagem" value="${objMensagem.mensagem}"  disabled/>
+            </div>
+            <div>
+                <label>Usuário</label> <input type="text" name="usuario" value="${objMensagem.usuario}" disabled />
+            </div>
+            <div>
+                <label>Tipo</label> <input type="text" name="tipo" value="${objMensagem.tipo}" disabled />
+            </div>
+        </fieldset>
         <div>
             <button type="submit">Para JSON</button>
-            <button type="reset">Limpar</button>
         </div>
     </form>
-    
     
     <div>
         <h2>Resultado JSON</h2>
